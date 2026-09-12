@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>실전 모의고사 · 시공간과 운동</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="exam.css">
+</head>
+<body>
+<header class="exam-top">
+  <h1>시공간과 운동 · 실전 모의고사</h1>
+  <div class="exam-timer" id="timer">45:00</div>
+</header>
+<main class="exam-wrap">
+  <div id="examCard" class="exam-layout">
+    <section class="exam-card">
+      <div class="exam-meta">
+        <span class="exam-number" id="questionNo">1 / 20</span>
+        <span class="exam-chapter" id="chapter">힘의 합성</span>
+      </div>
+      <p class="question" id="question">문제를 불러오는 중...</p>
+      <div class="options" id="options"></div>
+      <div class="exam-actions">
+        <button class="btn" id="prevBtn" type="button">← 이전</button>
+        <button class="btn primary" id="nextBtn" type="button">다음 문제 →</button>
+      </div>
+    </section>
+    <aside class="exam-nav">
+      <h2>문항 이동 · <span id="progress">0 / 20 답변</span></h2>
+      <div class="grid" id="questionGrid"></div>
+      <p class="nav-note">초록색 번호는 답변이 선택된 문항입니다. 답은 언제든 다시 변경할 수 있습니다.</p>
+      <button class="btn danger submit-full" id="submitBtn" type="button">답안 제출하기</button>
+    </aside>
+  </div>
+
+  <section class="result-card" id="resultCard">
+    <h2>시험 결과</h2>
+    <div class="result-score" id="resultScore">0 / 20점</div>
+    <p class="result-sub" id="resultText"></p>
+    <div class="result-section" id="review"></div>
+    <button class="btn primary" id="restartBtn" type="button">새 문제로 다시 풀기</button>
+  </section>
+</main>
+<script src="exam-data.js"></script>
+<script src="exam-bootstrap.js"></script>
+<script src="exam.js"></script>
+</body>
+</html>
