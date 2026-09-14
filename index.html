@@ -1,216 +1,33 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#f5f5f7">
-<title>시공간과 운동 · 개념 정밀 해설</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&family=Orbitron:wght@500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=notes-20260913">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f172a">
+  <title>핵심 정리 노트 | 물리학 · 화학</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="hub.css">
 </head>
 <body>
-<div class="hero">
-  <div class="eyebrow">PHYSICS_LOG // CONCEPT DEEP DIVE</div>
-  <h1>시공간과 운동</h1>
-  <div class="kr-sub">Spacetime &amp; Motion · 개념 정밀 해설</div>
-  <p class="hero-desc">힘의 합성에서 뉴턴 역학, 케플러의 행성 운동, 특수 상대성, 일반 상대성까지<br>수식과 물리적 원리를 연결하여 하나의 흐름으로 이해합니다.</p>
-  <div class="exam-panel" id="examStartPanel">
-    <div class="exam-info"><h3>📝 실전 모의고사</h3><p>20문항 · 45분 · 랜덤 문제은행 · 자동채점</p></div>
-    <a class="exam-btn" id="startExamBtn" href="exam.html">모의고사 시작하기</a>
-  </div>
-</div>
-
-<div class="navbar"><div class="inner">
-<a class="navlink" href="#s1">01 힘의 합성</a><a class="navlink" href="#s2">02 포물선</a><a class="navlink" href="#s3">03 원운동·단진동</a><a class="navlink" href="#s4">04 케플러·중력</a><a class="navlink" href="#s5">05 특수 상대성</a><a class="navlink" href="#s6">06 일반 상대성</a>
-</div></div>
-
-<main class="wrap">
-<section class="intro-card">
-  <div class="intro-kicker">STUDY ROADMAP</div>
-  <h2>이 노트에서 연결할 것</h2>
-  <div class="roadmap">
-    <span>벡터</span><b>→</b><span>운동</span><b>→</b><span>행성 궤도</span><b>→</b><span>빛과 시간</span><b>→</b><span>시공간</span>
-  </div>
-  <p>각 장의 공식은 단독으로 외우기보다 <strong>어떤 물리적 가정에서 출발해 어떤 결과를 설명하는지</strong>를 함께 보는 것이 핵심입니다.</p>
-</section>
-
-<div class="part"><span class="num">01</span><div class="txt"><span>CHAPTER 01</span><h3>힘과 운동</h3></div><div class="rule"></div></div>
-
-<section class="chapter" id="s1">
-  <div class="chapter-head"><span class="tag">1-01</span><h2>힘의 합성 <small>Addition of Forces</small></h2></div>
-  <div class="grid2">
-    <div class="text">
-      <p><strong>힘은 크기와 방향을 동시에 갖는 벡터량</strong>이야. 따라서 여러 힘을 더할 때는 단순한 스칼라 합이 아니라 방향까지 고려한 벡터합을 사용해야 해.</p>
-      <h3>① 평행사변형법</h3>
-      <p>두 힘 <span class="math">⃗F₁</span>, <span class="math">⃗F₂</span>의 시점을 일치시킨다. 두 벡터를 두 변으로 하는 평행사변형을 그리면, 공통 시점에서 반대 꼭짓점으로 향하는 대각선이 합력 <span class="math">⃗F<sub>net</sub></span>이 된다.</p>
-      <h3>② 삼각형법 · 꼬리물기</h3>
-      <p><span class="math">⃗F₁</span>의 끝점에 <span class="math">⃗F₂</span>의 시작점을 이어 붙이고, 첫 시작점에서 마지막 끝점까지 연결하면 합력의 방향과 크기를 얻는다.</p>
-      <div class="derivation">
-        <span class="label">MAGNITUDE · COSINE LAW</span>
-        <div class="big-formula">F = √(F₁² + F₂² + 2F₁F₂cosθ)</div>
-        <p>두 힘 사이의 사잇각을 <strong>θ</strong>라고 하면 코사인 법칙으로 합력의 크기를 나타낼 수 있다.</p>
-      </div>
-      <div class="callout"><span class="ttl">PHYSICAL MEANING</span><p>알짜힘이 0이면 뉴턴 제1법칙에 따라 정지한 물체는 계속 정지하고, 운동하던 물체는 등속 직선 운동을 유지한다.</p></div>
+  <main class="subject-hub">
+    <p class="eyebrow">STUDY NOTES / 2026</p>
+    <h1>핵심을 연결하는<br><em>과학 정리 노트</em></h1>
+    <p class="intro">과목별 핵심 개념, 공식, 그리고 바로 써볼 수 있는 학습 도구를 한곳에 정리했습니다.</p>
+    <div class="subject-grid">
+      <a class="subject-card physics" href="physics.html">
+        <span class="number">01</span><span class="symbol">↗</span>
+        <p class="label">PHYSICS</p><h2>물리학</h2>
+        <p>힘과 운동부터 상대성 이론까지, 시공간과 운동의 흐름을 따라갑니다.</p>
+        <span class="cta">물리학 노트 열기 <b>→</b></span>
+      </a>
+      <a class="subject-card chemistry" href="chemistry.html">
+        <span class="number">02</span><span class="symbol">⚗</span>
+        <p class="label">CHEMISTRY</p><h2>화학</h2>
+        <p>기체, 용액, 자발성, 반응 속도의 핵심 공식과 개념을 익힙니다.</p>
+        <span class="cta">화학 노트 열기 <b>→</b></span>
+      </a>
     </div>
-    <div class="visual">
-      <svg viewBox="0 0 520 360" role="img" aria-label="힘의 합성 평행사변형법">
-        <defs><linearGradient id="v1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#76adff"/><stop offset="1" stop-color="#0071e3"/></linearGradient><marker id="a1" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#0071e3"/></marker><marker id="a1d" markerWidth="13" markerHeight="13" refX="11" refY="6.5" orient="auto"><path d="M0 0L13 6.5L0 13Z" fill="#0b1220"/></marker></defs>
-        <rect x="12" y="12" width="496" height="336" rx="28" fill="#fbfdff"/>
-        <g opacity=".3" stroke="#adc0d4"><path d="M50 300H475"/><path d="M50 260H475"/><path d="M50 220H475"/><path d="M50 180H475"/><path d="M92 100V315"/><path d="M132 100V315"/><path d="M172 100V315"/><path d="M212 100V315"/><path d="M252 100V315"/><path d="M292 100V315"/></g>
-        <circle cx="90" cy="285" r="9" fill="#0b1220"/><line x1="90" y1="285" x2="328" y2="285" stroke="url(#v1)" stroke-width="9" marker-end="url(#a1)"/><line x1="90" y1="285" x2="214" y2="102" stroke="url(#v1)" stroke-width="9" marker-end="url(#a1)"/><line x1="328" y1="285" x2="452" y2="102" stroke="#9cb2c9" stroke-width="3" stroke-dasharray="8 8"/><line x1="214" y1="102" x2="452" y2="102" stroke="#9cb2c9" stroke-width="3" stroke-dasharray="8 8"/><line x1="90" y1="285" x2="452" y2="102" stroke="#0b1220" stroke-width="12" marker-end="url(#a1d)"/>
-        <text x="30" y="42" fill="#0b1220" font-size="15" font-weight="900">VECTOR ADDITION</text><text x="30" y="64" fill="#74849a" font-size="12">평행사변형의 대각선 = 합력</text><text x="135" y="319" fill="#0071e3" font-size="17" font-weight="900">F₁</text><text x="150" y="117" fill="#0071e3" font-size="17" font-weight="900">F₂</text><rect x="328" y="148" width="112" height="42" rx="21" fill="#0b1220"/><text x="384" y="175" fill="#fff" text-anchor="middle" font-size="16" font-weight="900">Fnet</text><text x="126" y="266" fill="#0b1220" font-size="18" font-weight="900">θ</text>
-      </svg>
-      <p class="caption">두 힘의 방향과 크기를 동시에 고려해야 한다.</p>
-    </div>
-  </div>
-</section>
-
-<section class="chapter" id="s2">
-  <div class="chapter-head"><span class="tag">1-02</span><h2>포물선 운동 <small>Projectile Motion</small></h2></div>
-  <div class="grid2 reverse-grid">
-    <div class="visual">
-      <svg viewBox="0 0 520 360" role="img" aria-label="포물선 운동의 수평 연직 성분">
-        <defs><linearGradient id="v2" x1="0" x2="1"><stop offset="0" stop-color="#8bbcff"/><stop offset="1" stop-color="#0071e3"/></linearGradient><marker id="a2" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#0b1220"/></marker><marker id="a2o" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#ff8a00"/></marker></defs>
-        <rect x="12" y="12" width="496" height="336" rx="28" fill="#fbfdff"/>
-        <g opacity=".25" stroke="#aec0d3"><path d="M45 300H475"/><path d="M45 260H475"/><path d="M45 220H475"/><path d="M45 180H475"/><path d="M45 140H475"/><path d="M85 92V310"/><path d="M125 92V310"/><path d="M165 92V310"/><path d="M205 92V310"/><path d="M245 92V310"/><path d="M285 92V310"/><path d="M325 92V310"/><path d="M365 92V310"/><path d="M405 92V310"/></g>
-        <path d="M55 300 Q260 48 465 300" fill="none" stroke="url(#v2)" stroke-width="10"/><circle cx="55" cy="300" r="9" fill="#0b1220"/><circle cx="260" cy="58" r="9" fill="#0071e3"/>
-        <line x1="55" y1="300" x2="116" y2="244" stroke="#0b1220" stroke-width="7" marker-end="url(#a2)"/><line x1="55" y1="300" x2="116" y2="300" stroke="#ff8a00" stroke-width="5" marker-end="url(#a2o)"/><line x1="116" y1="244" x2="116" y2="300" stroke="#3c7ebc" stroke-width="3" stroke-dasharray="8 8"/><line x1="260" y1="58" x2="260" y2="300" stroke="#9fb5cc" stroke-width="3" stroke-dasharray="8 8"/>
-        <text x="30" y="42" fill="#0b1220" font-size="15" font-weight="900">PROJECTILE MOTION</text><text x="30" y="64" fill="#74849a" font-size="12">수평 운동 + 연직 운동</text><rect x="103" y="207" width="80" height="36" rx="18" fill="#0b1220"/><text x="143" y="231" fill="#fff" text-anchor="middle" font-size="17" font-weight="900">v₀</text><text x="274" y="170" fill="#0b1220" font-size="16" font-weight="900">최고점 H</text><text x="245" y="343" fill="#0071e3" font-size="16" font-weight="900">R · 수평 도달거리</text><text x="29" y="275" fill="#0071e3" font-size="14" font-weight="800">x : 등속</text><text x="121" y="282" fill="#0071e3" font-size="14" font-weight="800">y : 등가속</text>
-      </svg>
-      <p class="caption">공기 저항을 무시하면 두 방향의 운동을 독립적으로 다룰 수 있다.</p>
-    </div>
-    <div class="text">
-      <p>초기 속도 <span class="math">v₀</span>를 수평선과 각도 <span class="math">θ</span>로 발사한 물체는 중력장에서 2차원 운동을 한다. 핵심은 <strong>수평 성분과 연직 성분을 분리하는 것</strong>이다.</p>
-      <h3>① 수평 방향</h3>
-      <p>공기 저항을 무시하면 <span class="math">F<sub>x</sub> = 0 ⇒ a<sub>x</sub> = 0</span>. 따라서 등속도 운동이다.</p>
-      <div class="formula"><span class="label">HORIZONTAL</span>v<sub>x</sub>(t) = v₀cosθ<br>x(t) = v₀cosθ · t</div>
-      <h3>② 연직 방향</h3>
-      <p>중력만 작용하므로 <span class="math">F<sub>y</sub> = −mg ⇒ a<sub>y</sub> = −g</span>. 따라서 등가속도 운동이다.</p>
-      <div class="formula"><span class="label">VERTICAL</span>v<sub>y</sub>(t) = v₀sinθ − gt<br>y(t) = v₀sinθ · t − ½gt²</div>
-      <h3>③ 최고점과 사거리</h3>
-      <p>최고점에서는 <span class="math">v<sub>y</sub> = 0</span>이다. 위의 연직 속도식에 이를 넣으면 최고점 도달 시간을 구할 수 있고, 이를 위치식에 대입하면 최고 높이를 얻는다.</p>
-      <div class="derivation"><span class="label">DERIVATION FLOW</span><p><strong>v<sub>y</sub>=0 → 최고점 시간 → y(t)에 대입 → 최고 높이</strong></p><p><strong>전체 시간 T = 2t<sub>h</sub></strong>이며, 같은 높이로 돌아오는 이상적인 경우 수평 도달거리는 <span class="math">R</span>로 정리한다.</p></div>
-      <div class="callout"><span class="ttl">KEY IDEA</span><p>동일한 초기 속력 조건에서 발사각 <strong>45°</strong>일 때 사거리가 최대가 된다.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="chapter" id="s3">
-  <div class="chapter-head"><span class="tag">1-03</span><h2>등속 원운동과 단진동 <small>Uniform Circular Motion &amp; SHM</small></h2></div>
-  <div class="split-2">
-    <article class="subcard">
-      <h3>01 · 등속 원운동</h3>
-      <p>반지름 <span class="math">r</span>인 원궤도를 일정한 속력 <span class="math">v</span>로 도는 운동이다. 속력은 일정하지만 <strong>운동 방향이 계속 바뀌기 때문에 가속도가 존재한다.</strong></p>
-      <div class="formula"><span class="label">ANGULAR SPEED</span>ω = Δθ/Δt = v/r<br>T = 2πr/v = 2π/ω<br>f = 1/T</div>
-      <div class="formula"><span class="label">CENTRIPETAL ACCELERATION / FORCE</span>a<sub>c</sub> = v²/r = rω²<br>F<sub>c</sub> = ma<sub>c</sub> = mv²/r = mrω²</div>
-      <p class="small-note"><strong>방향:</strong> 구심가속도와 구심력은 항상 원의 중심을 향하며, 속도 벡터와 서로 수직이다.</p>
-    </article>
-    <article class="subcard">
-      <h3>02 · 단진동</h3>
-      <p>단진동은 등속 원운동을 한 직선 위에 <strong>사영(projection)</strong>한 것과 같은 1차원 왕복 운동으로 이해할 수 있다.</p>
-      <div class="formula"><span class="label">RESTORING FORCE</span>F = −kx</div>
-      <div class="formula"><span class="label">EQUATION OF MOTION</span>m(d²x/dt²) = −kx<br>ω = √(k/m)</div>
-      <div class="formula"><span class="label">POSITION / PERIOD</span>x(t) = A cos(ωt + φ)<br>T = 2π√(m/k)</div>
-      <p class="small-note">단진자의 작은 진폭에서는 <span class="math">T = 2π√(l/g)</span>로 정리한다.</p>
-    </article>
-  </div>
-  <div class="visual wide-visual">
-    <svg viewBox="0 0 1040 310" role="img" aria-label="원운동과 단진동 연결 시각화">
-      <defs><linearGradient id="v3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9ec8ff"/><stop offset="1" stop-color="#0071e3"/></linearGradient><marker id="a3" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto"><path d="M0 0L11 5.5L0 11Z" fill="#0b1220"/></marker></defs>
-      <rect x="8" y="8" width="1024" height="294" rx="28" fill="#fbfdff"/><circle cx="250" cy="151" r="102" fill="#f0f6fd"/><circle cx="250" cy="151" r="78" fill="none" stroke="url(#v3)" stroke-width="8"/><circle cx="316" cy="110" r="12" fill="#0b1220"/><line x1="316" y1="110" x2="250" y2="151" stroke="#0071e3" stroke-width="5" marker-end="url(#a3)"/><line x1="316" y1="110" x2="365" y2="61" stroke="#0b1220" stroke-width="5" marker-end="url(#a3)"/><line x1="250" y1="151" x2="410" y2="151" stroke="#abc0d5" stroke-width="3" stroke-dasharray="7 7"/>
-      <line x1="500" y1="151" x2="970" y2="151" stroke="#a9bdcf" stroke-width="3"/><path d="M500 151 C570 55 640 55 705 151 S840 247 970 151" fill="none" stroke="url(#v3)" stroke-width="8"/><line x1="705" y1="151" x2="705" y2="250" stroke="#c3d1df" stroke-width="3" stroke-dasharray="7 7"/><circle cx="705" cy="151" r="10" fill="#0071e3"/>
-      <text x="30" y="40" fill="#0b1220" font-size="15" font-weight="900">UNIFORM CIRCULAR MOTION → SHM</text><text x="30" y="63" fill="#74849a" font-size="12">원운동의 한 축 성분을 사영하면 단진동으로 나타난다.</text><rect x="169" y="222" width="162" height="38" rx="19" fill="#0b1220"/><text x="250" y="246" fill="#fff" text-anchor="middle" font-size="15" font-weight="900">구심가속도 · Fᶜ</text><rect x="807" y="225" width="150" height="38" rx="19" fill="#edf5ff"/><text x="882" y="249" fill="#0071e3" text-anchor="middle" font-size="15" font-weight="900">x(t) · 단진동</text>
-    </svg>
-  </div>
-</section>
-
-<div class="part"><span class="num">02</span><div class="txt"><span>CHAPTER 02</span><h3>운동의 상대성</h3></div><div class="rule"></div></div>
-
-<section class="chapter" id="s4">
-  <div class="chapter-head"><span class="tag">2-01</span><h2>케플러의 법칙과 뉴턴의 중력 <small>Kepler's Laws &amp; Gravitation</small></h2></div>
-  <div class="grid2">
-    <div class="text">
-      <p>케플러는 관측 자료를 바탕으로 행성의 규칙적인 운동을 세 가지 법칙으로 정리했고, 뉴턴은 이를 <strong>만유인력</strong>과 운동 법칙으로 연결했다.</p>
-      <div class="law-card"><span class="law-no">01</span><div><h3>제1법칙 · 타원 궤도의 법칙</h3><p>모든 행성은 태양을 한 초점으로 하는 타원 궤도를 따라 공전한다.</p></div></div>
-      <div class="law-card"><span class="law-no orange">02</span><div><h3>제2법칙 · 면적 속도 일정의 법칙</h3><p>행성과 태양을 잇는 선분이 같은 시간 동안 휩쓸고 지나가는 면적은 항상 같다.</p><p class="small-note">이 원리는 <strong>각운동량 보존</strong>과 연결된다. 따라서 근일점에서 더 빠르고 원일점에서 더 느리다.</p></div></div>
-      <div class="law-card"><span class="law-no purple">03</span><div><h3>제3법칙 · 조화의 법칙</h3><p>공전 주기 <span class="math">T</span>의 제곱은 궤도 장반경 <span class="math">a</span>의 세제곱에 비례한다.</p><div class="big-formula">T² ∝ a³</div></div></div>
-      <div class="formula"><span class="label">NEWTON'S GRAVITATION</span>F = Gm₁m₂/r²</div>
-      <div class="derivation"><span class="label">KEPLER 3 · DERIVATION START</span><p>원궤도에서 만유인력이 구심력 역할을 한다고 놓는다.</p><div class="big-formula">G·Mm/r² = mr·4π²/T²</div><p>양변에서 질량 항을 정리하면 공전주기 <span class="math">T</span>와 궤도 크기 <span class="math">r</span> 사이의 관계가 나타나며, 비례상수가 중심 천체의 질량 <span class="math">M</span>과 연결됨을 볼 수 있다.</p><div class="big-formula">K = 4π²/(GM)</div></div>
-    </div>
-    <div class="visual">
-      <svg viewBox="0 0 520 500" role="img" aria-label="케플러 타원 궤도와 면적 속도">
-        <rect x="12" y="12" width="496" height="476" rx="28" fill="#fbfdff"/>
-        <ellipse cx="270" cy="245" rx="195" ry="115" fill="#eef5fd" stroke="#0071e3" stroke-width="7"/><circle cx="148" cy="245" r="16" fill="#0b1220"/><circle cx="411" cy="166" r="11" fill="#0071e3"/><circle cx="427" cy="330" r="11" fill="#0071e3"/><path d="M148 245L411 166Q370 219 148 245Z" fill="#d9eaff"/><path d="M148 245L427 330Q371 299 148 245Z" fill="#e7f0fa"/><line x1="148" y1="245" x2="411" y2="166" stroke="#7f98b2" stroke-width="3"/><line x1="148" y1="245" x2="427" y2="330" stroke="#7f98b2" stroke-width="3"/>
-        <text x="254" y="90" fill="#0b1220" font-size="18" font-weight="900">타원 궤도</text><text x="198" y="214" fill="#0071e3" font-size="15" font-weight="900">같은 시간 → 같은 면적</text><rect x="105" y="265" width="86" height="36" rx="18" fill="#0b1220"/><text x="148" y="289" fill="#fff" text-anchor="middle" font-size="15" font-weight="900">태양</text><text x="396" y="157" fill="#0b1220" font-size="13" font-weight="800">A</text><text x="434" y="348" fill="#0b1220" font-size="13" font-weight="800">B</text><text x="30" y="46" fill="#0b1220" font-size="15" font-weight="900">KEPLER'S LAWS</text><text x="30" y="68" fill="#74849a" font-size="12">제1법칙 · 제2법칙의 시각화</text><rect x="72" y="392" width="376" height="60" rx="20" fill="#f1f6fc" stroke="#d8e4ef"/><text x="260" y="418" text-anchor="middle" fill="#12345b" font-size="14" font-weight="800">근일점: 속력 ↑</text><text x="260" y="439" text-anchor="middle" fill="#58718f" font-size="12">원일점: 속력 ↓</text>
-      </svg>
-      <p class="caption">같은 시간 동안 같은 면적을 쓸어간다는 제2법칙.</p>
-    </div>
-  </div>
-</section>
-
-<section class="chapter" id="s5">
-  <div class="chapter-head"><span class="tag">2-02</span><h2>특수 상대성 이론 <small>Special Theory of Relativity</small></h2></div>
-  <div class="text full-text">
-    <p><strong>1905년 아인슈타인이 제안</strong>한 이론으로, 서로 등속도로 운동하는 모든 관성계에서 물리 법칙이 어떻게 작동하는지를 설명한다.</p>
-    <div class="postulates">
-      <article><span>01</span><h3>상대성 원리</h3><p>모든 관성계에서 물리 법칙은 동일한 형태로 성립한다. 절대적인 정지 상태는 존재하지 않는다.</p></article>
-      <article><span>02</span><h3>광속 불변</h3><p>진공에서 빛의 속력 <span class="math">c ≈ 3 × 10⁸ m/s</span>는 관찰자나 광원의 운동 상태에 관계없이 모든 관성계에서 일정하다.</p></article>
-    </div>
-    <div class="grid3">
-      <div class="info-card"><h3>동시성의 상대성</h3><p>한 관성계에서 동시에 일어난 두 사건이 상대 운동하는 다른 관성계에서는 동시에 일어난 사건이 아닐 수 있다.</p></div>
-      <div class="info-card"><h3>시간 지연</h3><div class="big-formula">γ = 1/√(1−v²/c²)</div><p>관찰자에 대해 운동하는 계의 시간은 더 천천히 흐르는 것으로 나타난다.</p></div>
-      <div class="info-card"><h3>길이 수축</h3><div class="big-formula">L = L₀√(1−v²/c²)</div><p>관찰자에 대해 운동하는 방향의 길이가 줄어든다.</p></div>
-    </div>
-    <div class="formula"><span class="label">TIME DILATION</span>Δt = γΔt₀</div>
-    <div class="formula"><span class="label">MASS–ENERGY EQUIVALENCE</span>E = mc²</div>
-    <div class="callout"><span class="ttl">ENERGY–MOMENTUM</span><p>총 에너지 관계식은 <strong>E² = (pc)² + (m₀c²)²</strong>로 정리된다.</p></div>
-  </div>
-  <div class="visual wide-visual">
-    <svg viewBox="0 0 1040 270" role="img" aria-label="특수 상대성 두 관성계와 빛의 속력">
-      <defs><linearGradient id="v5" x1="0" x2="1"><stop offset="0" stop-color="#8bbcff"/><stop offset="1" stop-color="#0071e3"/></linearGradient><marker id="a5" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#0071e3"/></marker></defs>
-      <rect x="8" y="8" width="1024" height="254" rx="28" fill="#fbfdff"/><rect x="80" y="88" width="190" height="78" rx="22" fill="#edf5ff" stroke="#d2e0ef"/><rect x="770" y="88" width="190" height="78" rx="22" fill="#f3f6fa" stroke="#d2dde8"/><circle cx="175" cy="127" r="12" fill="#0071e3"/><circle cx="865" cy="127" r="12" fill="#0b1220"/><line x1="270" y1="127" x2="770" y2="127" stroke="url(#v5)" stroke-width="8" marker-end="url(#a5)"/><text x="175" y="62" text-anchor="middle" fill="#0b1220" font-size="17" font-weight="900">관성계 A</text><text x="865" y="62" text-anchor="middle" fill="#0b1220" font-size="17" font-weight="900">관성계 B</text><text x="520" y="112" text-anchor="middle" fill="#0071e3" font-size="18" font-weight="900">c = 일정</text><rect x="340" y="187" width="360" height="42" rx="21" fill="#0b1220"/><text x="520" y="214" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">관성계와 무관하게 진공의 빛의 속력은 일정</text>
-    </svg>
-  </div>
-</section>
-
-<section class="chapter" id="s6">
-  <div class="chapter-head"><span class="tag">2-03</span><h2>일반 상대성 이론 <small>General Theory of Relativity</small></h2></div>
-  <div class="text full-text">
-    <p><strong>1915년 아인슈타인이 완성</strong>한 이론으로, 가속 좌표계와 중력을 시공간의 기하학적 구조로 통합한다.</p>
-    <div class="equivalence"><span class="label">EQUIVALENCE PRINCIPLE</span><blockquote>관성력에 의한 가속도 운동과 균일한 중력장에 의한 효과는 물리적으로 전혀 구별할 수 없다.</blockquote><p>이 원리에 따라 관성 질량과 중력 질량이 같아지며, 중력을 힘이 아닌 가속계의 효과로 이해할 수 있게 된다.</p></div>
-    <div class="grid2 concept-grid">
-      <div>
-        <h3>시공간의 휘어짐</h3><p>질량과 에너지는 주변의 <strong>4차원 시공간</strong>을 휘게 만든다. 물체와 빛은 휘어진 시공간의 최단 경로인 <strong>측지선(Geodesic)</strong>을 따라 이동한다.</p>
-        <h3>중력 시간 지연</h3><p>중력이 강할수록 시공간의 휘어짐이 심해지고, 시간의 흐름은 더 천천히 진행된다.</p>
-      </div>
-      <div>
-        <h3>중력 렌즈 효과</h3><p>질량이 큰 천체 근처를 지나는 빛이 휘어진 시공간을 따라 꺾이며 뒤쪽 천체의 이미지가 왜곡되어 보인다.</p>
-        <h3>중력 적색편이</h3><p>강한 중력장을 빠져나오는 빛은 에너지를 잃고 진동수가 감소하며 파장이 증가한다.</p>
-      </div>
-    </div>
-    <div class="result-row"><span>수성의 근일점 이동</span><span>블랙홀의 존재</span><span>중력파 검출</span></div>
-  </div>
-  <div class="visual wide-visual">
-    <svg viewBox="0 0 1040 350" role="img" aria-label="시공간 휘어짐과 측지선 개념도">
-      <defs><radialGradient id="v6" cx="50%" cy="42%" r="62%"><stop offset="0" stop-color="#a4ccff"/><stop offset="1" stop-color="#4b90e8"/></radialGradient></defs>
-      <rect x="8" y="8" width="1024" height="334" rx="28" fill="#fbfdff"/><ellipse cx="520" cy="170" rx="390" ry="105" fill="#eef5fd"/>
-      <g fill="none" stroke="#78a7d5" stroke-width="2"><path d="M130 100C250 145 350 171 520 174C690 171 790 145 910 100"/><path d="M150 68C275 120 375 143 520 145C665 143 765 120 890 68"/><path d="M180 38C300 88 395 115 520 116C645 115 740 88 860 38"/><path d="M130 238C260 202 365 231 520 244C675 231 780 202 910 238"/><path d="M180 285C315 238 400 279 520 292C640 279 725 238 860 285"/></g>
-      <circle cx="520" cy="174" r="31" fill="url(#v6)"/><circle cx="520" cy="174" r="13" fill="#0b1220"/>
-      <path d="M180 84Q320 30 520 174T860 84" fill="none" stroke="#0071e3" stroke-width="5" stroke-dasharray="12 9"/>
-      <text x="520" y="51" text-anchor="middle" fill="#0b1220" font-size="18" font-weight="900">시공간의 휘어짐</text><text x="520" y="180" text-anchor="middle" fill="#fff" font-size="12" font-weight="900">질량·에너지</text><rect x="264" y="288" width="512" height="38" rx="19" fill="#0b1220"/><text x="520" y="313" text-anchor="middle" fill="#fff" font-size="14" font-weight="800">질량·에너지 → 시공간 곡률 → 측지선 운동</text>
-    </svg>
-  </div>
-</section>
-
-<section class="summary-card">
-  <div class="intro-kicker">FINAL CONNECTION</div>
-  <h2>6개 단원의 하나의 흐름</h2>
-  <p><strong>힘</strong>은 벡터의 합으로 운동을 결정하고, <strong>중력</strong>은 행성의 궤도를 지배한다. 특수 상대성에서는 빠른 운동을 통해 시간과 공간의 상대성이 드러나고, 일반 상대성에서는 중력을 <strong>시공간의 구조</strong>로 이해하게 된다.</p>
-  <div class="roadmap final"><span>벡터와 힘</span><b>→</b><span>뉴턴 역학</span><b>→</b><span>케플러·중력</span><b>→</b><span>빛·시간</span><b>→</b><span>휘어진 시공간</span></div>
-</section>
-<footer>PHYSICS_LOG · SPACETIME &amp; MOTION · CONCEPT DEEP DIVE</footer>
-</main>
-<script src="script.js?v=notes-20260913"></script>
+  </main>
 </body>
 </html>

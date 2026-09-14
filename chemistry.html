@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8fafc">
+  <title>화학 정리 노트 | 핵심 공식과 개념</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="chemistry.css">
+</head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><span>⚗</span><strong>화학 핵심 정리 노트</strong></a><nav aria-label="단원"><a href="#gas">기체</a><a href="#solution">용액</a><a href="#energy">자발성</a><a href="#rate">반응 속도</a></nav><button id="themeToggle" class="theme-toggle" type="button" aria-label="어두운 테마 전환">◐</button></header>
+<main class="layout">
+  <aside class="sidebar">
+    <p class="side-title">QUICK NAVIGATION</p><a href="#gas">I. 물질의 세 가지 상태</a><a href="#solution">II. 용액의 성질</a><a href="#energy">III. 화학 변화의 자발성</a><a href="#rate">IV. 반응 속도</a>
+    <section class="calculator" aria-labelledby="calculatorTitle"><p class="side-title" id="calculatorTitle">IDEAL GAS CALCULATOR</p><h2>이상 기체 압력</h2><label>n · 몰수 (mol)<input id="calcN" type="number" value="1" min="0" step="0.1"></label><label>T · 온도 (K)<input id="calcT" type="number" value="273" min="0" step="1"></label><label>V · 부피 (L)<input id="calcV" type="number" value="22.4" min="0.1" step="0.1"></label><output id="calcP">1.00 atm</output></section>
+  </aside>
+  <div class="content">
+    <section class="hero"><p class="kicker">CHEMISTRY / CONCEPT &amp; FORMULA</p><h1>공식이 개념으로<br><em>이어지는 화학</em></h1><p>기체와 용액의 성질에서 엔탈피·엔트로피, 반응 속도까지. 시험에 필요한 핵심을 단원별로 빠르게 연결합니다.</p><input id="searchInput" class="search" type="search" placeholder="개념 검색 (예: 이상 기체, 엔트로피, 삼투압)"></section>
+    <p id="emptyState" class="empty-state" hidden>검색 결과가 없습니다. 다른 검색어를 입력해 보세요.</p>
+    <section class="unit" id="gas"><div class="unit-heading"><span>01</span><div><p>UNIT I</p><h2>물질의 세 가지 상태</h2></div></div><div class="card-grid">
+      <article class="note-card searchable"><p class="card-label">GAS LAWS</p><h3>기체의 성질</h3><ul><li><b>보일 법칙:</b> 온도가 일정할 때, V ∝ 1/P</li><li><b>샤를 법칙:</b> 압력이 일정할 때, V ∝ T</li><li><b>아보가드로 법칙:</b> 같은 T, P에서 V ∝ n</li></ul><button class="formula" data-formula="PV = nRT">PV = nRT <small>이상 기체 상태 방정식</small></button></article>
+      <article class="note-card searchable"><p class="card-label">MIXED GAS</p><h3>부분 압력과 몰분율</h3><p>전체 몰수에서 성분 A가 차지하는 비율이 몰분율 X<sub>A</sub>입니다.</p><button class="formula" data-formula="P_A = X_A × P_total">P<sub>A</sub> = X<sub>A</sub> · P<sub>전체</sub><small>X<sub>A</sub> = n<sub>A</sub> / n<sub>전체</sub></small></button></article>
+      <article class="note-card wide searchable"><p class="card-label">INTERMOLECULAR FORCE</p><h3>액체의 분자 간 상호작용</h3><div class="mini-grid"><div><b>쌍극자-쌍극자 힘</b><p>극성 분자 사이의 정전기적 인력입니다.</p></div><div class="highlight"><b>수소 결합</b><p>F, O, N에 직접 결합된 H가 만드는 강한 인력입니다.</p></div><div><b>분산력</b><p>모든 분자 사이에 존재하며 분자량이 클수록 강해집니다.</p></div></div></article>
+    </div></section>
+    <section class="unit" id="solution"><div class="unit-heading blue"><span>02</span><div><p>UNIT II</p><h2>용액의 성질</h2></div></div><div class="card-grid two"><article class="note-card searchable"><p class="card-label">COLLIGATIVE PROPERTIES</p><h3>물과 용액</h3><p>물의 수소 결합은 큰 비열·기화열, 큰 표면장력, 그리고 얼음의 낮은 밀도를 만듭니다.</p><button class="formula" data-formula="m = solute mol / solvent kg">m = 용질 mol / 용매 kg<small>몰랄 농도</small></button><button class="formula small" data-formula="ΔT_b = K_b · m; ΔT_f = K_f · m">ΔT<sub>b</sub> = K<sub>b</sub>m, ΔT<sub>f</sub> = K<sub>f</sub>m</button></article><article class="note-card searchable"><p class="card-label">OSMOSIS</p><h3>삼투 현상</h3><p>반투막을 사이에 두고 묽은 용액에서 진한 용액 쪽으로 <b>용매가 이동</b>하는 현상입니다.</p><button class="formula" data-formula="Π = CRT">Π = CRT<small>반트 호프 법칙 · 삼투압</small></button><p class="tip">삼투압은 용질 종류보다 몰농도 C와 절대온도 T에 비례합니다.</p></article></div></section>
+    <section class="unit" id="energy"><div class="unit-heading green"><span>03</span><div><p>UNIT III</p><h2>화학 변화의 자발성</h2></div></div><div class="card-grid two"><article class="note-card searchable"><p class="card-label">ENTHALPY</p><h3>엔탈피와 헤스 법칙</h3><button class="formula" data-formula="ΔH = ΣH_products − ΣH_reactants">ΔH = ΣH<sub>생성물</sub> − ΣH<sub>반응물</sub></button><p><b class="hot">발열 반응 ΔH &lt; 0</b>은 열을 방출하고, <b class="cool">흡열 반응 ΔH &gt; 0</b>은 열을 흡수합니다.</p><p class="tip">처음 상태와 나중 상태가 같으면 경로와 상관없이 반응 엔탈피 총합은 일정합니다.</p></article><article class="note-card emphasis searchable"><p class="card-label">GIBBS FREE ENERGY</p><h3>자발성과 깁스 에너지</h3><p>엔트로피 S는 물질의 무질서도를 나타냅니다.</p><button class="formula" data-formula="ΔG = ΔH − TΔS">ΔG = ΔH − TΔS</button><ul class="conditions"><li><b>ΔG &lt; 0</b> 자발적 반응</li><li><b>ΔG = 0</b> 동적 평형</li><li><b>ΔG &gt; 0</b> 비자발적 반응</li></ul></article></div></section>
+    <section class="unit" id="rate"><div class="unit-heading purple"><span>04</span><div><p>UNIT IV</p><h2>반응 속도</h2></div></div><div class="card-grid two"><article class="note-card searchable"><p class="card-label">RATE LAW</p><h3>반응 속도와 반감기</h3><button class="formula" data-formula="v = k[A]^m[B]^n">v = k[A]<sup>m</sup>[B]<sup>n</sup><small>반응 속도식</small></button><button class="formula small" data-formula="t_1/2 = ln 2 / k ≈ 0.693 / k">t<sub>1/2</sub> = ln 2 / k ≈ 0.693 / k</button><p>1차 반응의 반감기는 <b>초기 농도와 무관하게 일정</b>합니다.</p></article><article class="note-card searchable"><p class="card-label">EFFECTIVE COLLISION</p><h3>유효 충돌과 속도 변수</h3><ol><li>올바른 충돌 방향을 가질 것</li><li>활성화 에너지 E<sub>a</sub> 이상의 에너지를 가질 것</li></ol><div class="factor-list"><p><b>농도</b> 입자 수와 충돌 횟수 증가</p><p><b>온도</b> E<sub>a</sub> 이상의 입자 비율 증가</p><p><b>촉매</b> 새 경로 제공 · ΔH는 변하지 않음</p></div></article></div></section>
+  </div>
+</main><div id="toast" class="toast" role="status" aria-live="polite">공식이 복사되었습니다.</div><script src="chemistry.js"></script>
+</body>
+</html>
